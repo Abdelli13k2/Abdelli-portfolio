@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./assets/style/styles.css" />
+  </head>
+  <body>
+    <!-- En-tête -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projet.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="typing-container">
+        <h1 class="gradient-text" id="typing-effect"></h1>
+        <span class="cursor">|</span>
+      </div>
+    </header>
+    <!-- Section Contact -->
+    <section class="contact-section">
+      <h2 class="contact-title">Contact</h2>
+      <p class="contact-description">
+        Les informations envoyées via ce formulaire sont utilisées pour vous
+        recontacter. Elles ne sont pas stockées dans une base de données et ne
+        sont pas utilisées à des fins commerciales ou publicitaires.
+      </p>
+
+      <form class="contact-form" onsubmit="handleForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="prenom">* Prénom</label>
+            <input
+              type="text"
+              id="prenom"
+              name="prenom"
+              placeholder="John"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="nom">* Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Doe" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">* Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="john.doe@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">* Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Votre message..."
+            maxlength="300"
+            required
+          ></textarea>
+          <div class="char-count"><span id="char-count">0</span>/300</div>
+        </div>
+
+        <button type="submit" class="submit-btn">Envoyez</button>
+      </form>
+    </section>
+    <!-- Fin Section Contact -->
+
+   <!-- Section Boutons -->
+   <section class="cta-section">
+    <a href="CV Abdelli.pdf" class="cta-button" target="_blank" download>Télécharger mon CV en PDF</a>
+   </section>
+
+    <!-- Pied de page -->
+    <footer>
+      <p>© 2025 Created by Abdelli BENAZZOUZ</p>
+    </footer>
+
+    <div id="mouse-glow"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
